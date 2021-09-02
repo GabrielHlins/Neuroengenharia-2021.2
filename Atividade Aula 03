@@ -1,0 +1,215 @@
+tipoCelula = 'procarionte'
+digitalGain = 1.00
+resolucaoImagem = 100
+digitalOffset = -0.25
+frameSizeX = 512
+frameSizeY = 512
+scanSpeed = 9
+pinholeAdjust = 132.0
+detectorGain = 800
+bitDepth = 12
+laser = 488
+
+print('Esse programa tem como objetivo receber dados para a configuração automática de seu microscópio confocal.')
+
+nome = input('Insira seu nome: ')
+
+print(nome +', a configuração será inicializada.')
+
+alt = tipoCelula
+tipoCelula = input('\nInsira o tipo de célula a ser visualizada.' + '[Valor configurado: ' + str(tipoCelula) + ']: ')
+print('Houve alteração na variável inserida?', tipoCelula != alt)
+
+alt = digitalGain
+digitalGain = float(input('\nInsira o Digital Gain que deseja atribuir.' + '[Valor configurado: ' + str(digitalGain) + ']: '))
+print('Houve alteração na variável inserida?', digitalGain != alt)
+
+alt = resolucaoImagem
+resolucaoImagem = input('\nInsira a resolução desejada para a imagem.' + '[Valor configurado: ' + str(resolucaoImagem) + ']: ')
+print('Houve alteração na variável inserida?', resolucaoImagem != alt)
+
+alt = digitalOffset
+digitalOffset = float(input('\nInsira o Digital Offset que deseja atribuir' + '[Valor configurado: ' + str(digitalOffset) + ']: '))
+print('Houve alteração na variável inserida?', digitalOffset != alt)
+
+alt = frameSizeX
+frameSizeX = int(input('\nInforme o tamanho do frame desejado para o eixo X' + '[Valor configurado: ' + str(frameSizeX) + ']: '))
+print('Houve alteração na variável inserida?', frameSizeX != alt)
+
+alt = frameSizeY
+frameSizeY = int(input('\nInforme o tamanho do frame desejado para o eixo Y' + '[Valor configurado: ' + str(frameSizeY) + ']: '))
+print('Houve alteração na variável inserida?', frameSizeY != alt)
+
+alt = scanSpeed
+scanSpeed = input('\nInforme a velocidade de escaneamento.' + '[Valor configurado: ' + str(scanSpeed) + ']: ')
+print('Houve alteração na variável inserida?', scanSpeed != alt)
+
+alt = pinholeAdjust
+pinholeAdjust = float(input('\nInsira a abertura do pinhole.' + '[Valor configurado: ' + str(pinholeAdjust) + ']: '))
+print('Houve alteração na variável inserida?', pinholeAdjust != alt)
+
+alt = detectorGain
+detectorGain = int(input('\nInsira o Detector Gain que deseja atribuir.' + '[Valor configurado: ' + str(detectorGain) + ']: '))
+print('Houve alteração na variável inserida?', detectorGain != alt)
+
+alt = bitDepth
+bitDepth = int(input('\nInsira a profundidade de bits que deseja atribuir.' + '[Valor configurado: ' + str(bitDepth) + ']: '))
+print('Houve alteração na variável inserida?', bitDepth != alt)
+
+alt = laser
+laser = int(input('\nInforme o comprimento de onda do laser a ser utilizado' + '[Valor configurado: ' + str(laser) + ']: '))
+print('Houve alteração na variável inserida?', laser != alt)
+
+print('As configurações setadas pelo usuário são:\nTipo de célula: ' + str(tipoCelula) + '\nDigital Gain: ' 
++ str(digitalGain) + '\nResolução da imagem: '  + str(resolucaoImagem) + '\nDigital Offset: ' + str(digitalOffset) + '\nFrame Size (Eixo X): ' 
++ str(frameSizeX) + '\nFrame Size (Eixo Y): ' + str(frameSizeY) + '\nVelocidade de Escaneamento: ' + str(scanSpeed) + '\nAbertura do pinhole: '
++ str(pinholeAdjust) + '\nDetector Gain: ' + str(detectorGain) + '\nProfundidade de bits: ' + str(bitDepth) + 
+'\nComprimento de onda do laser: ' + str(laser))
+
+
+print('\nA calibração do microscópio será inicializada.')
+
+print('\nInicializando a calibração horizontal do equipamento.')
+
+# Calibração Horizontal nº 1
+calibrHoriz = input('\nInsira a primeira letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[0].lower())
+calibrHoriz = input('\nInsira a última letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[-1].lower())
+print('A calibração precisa ser realizada mais 9 vezes.')
+
+# Calibração Horizontal nº 2
+calibrHoriz = input('\nInsira a primeira letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[0].lower())
+calibrHoriz = input('\nInsira a última letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[-1].lower())
+print('A calibração precisa ser realizada mais 8 vezes.')
+
+# Calibração Horizontal nº 3
+calibrHoriz = input('\nInsira a primeira letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[0].lower())
+calibrHoriz = input('\nInsira a última letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[-1].lower())
+print('A calibração precisa ser realizada mais 7 vezes.')
+
+# Calibração Horizontal nº 4
+calibrHoriz = input('\nInsira a primeira letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[0].lower())
+calibrHoriz = input('\nInsira a última letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[-1].lower())
+print('A calibração precisa ser realizada mais 6 vezes.')
+
+# Calibração Horizontal nº 5
+calibrHoriz = input('\nInsira a primeira letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[0].lower())
+calibrHoriz = input('\nInsira a última letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[-1].lower())
+print('A calibração precisa ser realizada mais 5 vezes.')
+
+# Calibração Horizontal nº 6
+calibrHoriz = input('\nInsira a primeira letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[0].lower())
+calibrHoriz = input('\nInsira a última letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[-1].lower())
+print('A calibração precisa ser realizada mais 4 vezes.')
+
+# Calibração Horizontal nº 7
+calibrHoriz = input('\nInsira a primeira letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[0].lower())
+calibrHoriz = input('\nInsira a última letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[-1].lower())
+print('A calibração precisa ser realizada mais 3 vezes.')
+
+# Calibração Horizontal nº 8
+calibrHoriz = input('\nInsira a primeira letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[0].lower())
+calibrHoriz = input('\nInsira a última letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[-1].lower())
+print('A calibração precisa ser realizada mais 2 vezes.')
+
+# Calibração Horizontal nº 9
+calibrHoriz = input('\nInsira a primeira letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[0].lower())
+calibrHoriz = input('\nInsira a última letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[-1].lower())
+print('A calibração precisa ser realizada mais 1 vez.')
+
+# Calibração Horizontal nº 10
+calibrHoriz = input('\nInsira a primeira letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[0].lower())
+calibrHoriz = input('\nInsira a última letra do seu nome: ')
+print('A letra informada, [' + calibrHoriz + '] foi digitada corretamente: ', calibrHoriz == nome[-1].lower())
+
+
+print('\nInicializando a calibração vertical do equipamento.')
+
+# Calibração Vertical nº 1
+calibrVert = input('\nInsira a segunda letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[1].lower())
+calibrVert = input('\nInsira a penúltima letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[-2].lower())
+print('A calibração precisa ser realizada mais 9 vezes.')
+
+# Calibração Vertical nº 2
+calibrVert = input('\nInsira a segunda letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[1].lower())
+calibrVert = input('\nInsira a penúltima letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[-2].lower())
+print('A calibração precisa ser realizada mais 8 vezes.')
+
+# Calibração Vertical nº 3
+calibrVert = input('\nInsira a segunda letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[1].lower())
+calibrVert = input('\nInsira a penúltima letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[-2].lower())
+print('A calibração precisa ser realizada mais 7 vezes.')
+
+# Calibração Vertical nº 4
+calibrVert = input('\nInsira a segunda letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[1].lower())
+calibrVert = input('\nInsira a penúltima letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[-2].lower())
+print('A calibração precisa ser realizada mais 6 vezes.')
+
+# Calibração Vertical nº 5
+calibrVert = input('\nInsira a segunda letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[1].lower())
+calibrVert = input('\nInsira a oenúltima letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[-2].lower())
+print('A calibração precisa ser realizada mais 5 vezes.')
+
+# Calibração Vertical nº 6
+calibrVert = input('\nInsira a segunda letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[1].lower())
+calibrVert = input('\nInsira a penúltima letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[-2].lower())
+print('A calibração precisa ser realizada mais 4 vezes.')
+
+# Calibração Vertical nº 7
+calibrVert = input('\nInsira a segunda letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[1].lower())
+calibrVert = input('\nInsira a penúltima letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[-2].lower())
+print('A calibração precisa ser realizada mais 3 vezes.')
+
+# Calibração Vertical nº 8
+calibrVert = input('\nInsira a segunda letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[1].lower())
+calibrVert = input('\nInsira a penúltima letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[-2].lower())
+print('A calibração precisa ser realizada mais 2 vezes.')
+
+# Calibração Vertical nº 1
+calibrVert = input('\nInsira a segunda letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[1].lower())
+calibrVert = input('\nInsira a penúltima letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[-2].lower())
+print('A calibração precisa ser realizada mais 1 vez.')
+
+# Calibração Vertical nº 1
+calibrVert = input('\nInsira a segunda letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[1].lower())
+calibrVert = input('\nInsira a penúltima letra do seu nome: ')
+print('A letra informada, [' + calibrVert + '] foi digitada corretamente: ', calibrVert == nome[-2].lower())
+
+print('A calibração do equipamento foi concluída.')
