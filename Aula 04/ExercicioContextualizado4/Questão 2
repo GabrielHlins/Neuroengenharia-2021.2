@@ -1,0 +1,90 @@
+distanciaInicial = 30
+toqueBarraEsq = False
+toqueBarraDir = False 
+som1 = False
+som2 = False 
+faseAprox = False
+habituacao = False 
+tempoCorreto = True 
+proximaFase = False 
+faseSom = False
+toqueBarra = 0
+distanciaAprox = 30
+
+# habituação
+
+animalHabituado = input('O animal está habituado? (s/n): ')
+if(animalHabituado[0].lower() == 's'):
+    animalHabituado == True
+    habituacao == True
+    faseAprox == True
+    print('A habituação foi realizada.')
+
+if(animalHabituado[0].lower() == 'n'):
+    animalHabituado == False
+    habituacao == False
+    print('A habituação não foi realizada.')
+
+# aproximação
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')
+    
+while(toqueBarra < 20):
+    alt = input('\nO animal tocou na barra (s/n)? ')
+    if(alt[0] == 's'):
+        toqueBarra += 1
+
+if(toqueBarra >= 20):
+    proximaFase = True 
+    faseAprox = False 
+    faseSom = True
+
+# som
+
+if(faseAprox == False and proximaFase == True and faseSom == True):
+    print('\nA próxima fase será iniciada.')
+    toqueBarra = 0
+
+while(toqueBarra < 50):
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')
+        toqueBarra += 1
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+        toqueBarra += 1
+
+    som1 = False
+    som2 = False
+    toqueBarraDir = False
+    toqueBarraEsq = False  
+    
+# tempo
+
+alt = input('o experimento foi conduzido em até 30 minutos (s/n)?')
+if(alt[0] == 's' and toqueBarra == 50):
+    proximaFase = True
+    print('O experimento irá para a próxima fase.')
+else:
+    proximaFase = False
+    print('O experimento será encerrado.')
+
+
+
+
+
