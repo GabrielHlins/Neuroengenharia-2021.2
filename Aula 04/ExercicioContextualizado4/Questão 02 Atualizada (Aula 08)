@@ -1,3 +1,5 @@
+import csv
+
 def armazenar(arquivo, tipo, texto):
     if(tipo == 'txt'):
         arquivo.write(texto)
