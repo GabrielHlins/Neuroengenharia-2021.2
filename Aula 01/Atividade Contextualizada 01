@@ -1,0 +1,133 @@
+Algoritmo Lokomat
+Var:
+FemurPaciente, velocidade, pesoPaciente, grauLiberade: real
+Resposta, coletePaciente: string
+Iniciarlokomat, coleteposicionado, coletefixado, pacientePosiconado: boleano
+Pacientesuspenso, suporteMemInfFixado, movimentoMemInfAdequado:
+boleano
+Inicio
+Escreva “você vai usar o lokomat?”
+Leia resposta
+Resposta: Maiusculo(Resposta)
+Se resposta = “SIM”
+Então
+Iniciarlokomat=verdadeiro
+Se “Não”
+Iniciarlokomat=Falso
+Fimse
+Se iniciarlokomat=Verdadeiro
+Então
+femurPaciente=medirFemur()
+Escolha
+Caso FemurPaciente<=35.0
+ColetePaciente=”Tipo I”
+Caso FemurPaciente>=35.0
+ColetePaciente=”TipoII”
+Fimescolha
+Repita
+posicionarColete(ColetePaciente)
+escreva”A indicação do colete está posicionada na lombar do
+paciente?”
+Leia resporta = “Sim”
+Então
+Coleteposicionado=Verdadeiro
+Se “NÃO”
+Coleteposicionado=Falso
+Fimse
+Até que coletePosicionado = Verdadeiro
+Repita
+ColeteFixado=fixarcolete()pacientePosicionado+posicionarPacienteLokomat()
+Até que (ColeteFixado=Verdadeiro) e
+(PacentePosicionado=Verdadeiro)
+ControleRemoto(“Descer suporte de sustentação”)
+FixarTirantes()
+Repita
+ControleRemoto(“Subir suporte de Sustentação”)
+Escreva “Paciente está suspenso?”
+Leia resposta
+Resposta=Maiuscula(Resposta)
+Se Resposta=”SIM”
+Então
+SuporteMemInfFixado=FixarSuporteMembrosInferiores()
+Se Não
+SuporteMemInfFixado=Falso
+Fimse
+Até que suporteMemInfFixado=Verdadeiro
+SimularMovimentodeMarcha()
+Escreva” O equipamento está corretamente ajustado para executar o
+movimento de marcha?”
+Leia Resposta
+Resposta=Maiusculo(Resposta)
+Se resposta= “SIM”
+Então
+movimentoMemInfAdequado=Verdadeiro
+Senão
+movimentoMemInfAdequado=Falso
+Fim_se
+Até que movimentoMemInfAdequado=Verdadeiro
+Se (coletePosicionado=Verdadeiro) e (pacienteSuspenso=Verdadeiro)
+E (movimentoMemInfAdequado=Verdadeiro)
+Então
+Escreva “Informe o peso do paciente”
+Leia pesoPaciente
+Escreva “Informe o grau de liberdade do movimento”
+Leia graudeLiberdade
+Escreva “Informe a velocidade da marcha”
+Leia velocidade
+IniciarTraining(PesoPaciente, graudeliberdade, Velocidade)
+StartPosition()
+Repita
+Escreva”Chegou ao fim do protocolo, aconteceu alguma anormalidade
+ou o paciente está cansado?”
+Leia resposta
+Se resposta=Maiusucula(Resposta)
+Se resposta= “SIM”
+EntãoDesligarLokomat()
+RetirarPaciente()
+Fim_se
+Enquanto resposta!=”SIM”
+Fim_se
+Fim_se
+Fim
+5) ZeroG
+Incio
+Você vai usar o ZeroG?
+Resposta
+Resposta=Maiusculo(Resposta)
+Resposta=”SIM”
+iniciarZeroG=Verdadeiro iniciarZeroG=Falso
+iniciarZeroG=Verdadeiro
+Verdadeiro Falso=Fim
+femurPaciente=medirFemur()
+femurPaciente<=35.0
+ColetePaciente=Tipo”II”
+femurPaciente=>=35.0
+ColetePaciente=Tipo”I”
+PosicionarColete(ColetePaciente)
+A inidicação do colete está posicionado na lombar do paciente?
+Resposta
+Resposta=Maiuscula(resposta)
+Resposta=”Sim”
+coletePaciente=Verdadeiro coletePaciente=Falso
+coleteFixado=fixarColete
+pacientePosicionado=posionarPacienteZeroG()
+ColeteFixado=verdadera e PacientePosicionado=verdadeira
+ControleRemoto(“Subir suporte de sustentação”)
+Paciente está suspenso?
+RespostaResposta=”Sim”
+PacienteSuspenso=verdadeiro
+retirarCadeiradeRodas()
+ColetePosicionado=Verdadeiro e pacienteSuspenso=Verdadeiro
+Informe o Peso do paciente
+pesoPaciente
+Informe o percentual de ajuste na sustentação
+graduDependencia
+IniciarZeroG
+(pesoPaciente, grauDepenencia)
+Chegou ao fim do procotolo, aconteceu alguma anormalidade ou o paciente está cansado?
+Resposta
+Resposta=Maiusculo(Resposta)
+Resposta=”SIM”
+DesligarZeroG()
+RetirarPaciente()
+Fim
