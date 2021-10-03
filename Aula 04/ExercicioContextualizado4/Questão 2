@@ -1,0 +1,1027 @@
+distanciaInicial = 30
+toqueBarraEsq = False
+toqueBarraDir = False 
+som1 = False
+som2 = False 
+faseAprox = False
+habituacao = False 
+tempoCorreto = True 
+proximaFase = False 
+faseSom = False
+toqueBarra = 0
+distanciaAprox = 30
+
+# habituação
+
+animalHabituado = input('O animal está habituado? (s/n): ')
+if(animalHabituado[0].lower() == 's'):
+    animalHabituado == True
+    habituacao == True
+    faseAprox == True
+    print('A habituação foi realizada.')
+
+if(animalHabituado[0].lower() == 'n'):
+    animalHabituado == False
+    habituacao == False
+    print('A habituação não foi realizada.')
+
+# aproximação
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 19 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 18 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 17 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 16 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 15 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 14 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 13 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 12 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 11 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 10 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 9 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 8 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 7 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 6 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 5 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 4 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 3 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Serão feitas mais 2 repetições.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    print('Será feita mais 1 repetição.')
+
+distanciaAprox = float(
+        input('\nQual a distância entre o animal e a barra? ')
+            )
+if(distanciaAprox < distanciaInicial):
+        print('O animal se aproximou da barra. Será liberada a recompensa de 0,5 mL.')    
+
+alt = input('\nO animal tocou na barra (s/n)? ')
+if(alt[0] == 's'):
+    proximaFase = True 
+    faseAprox = False 
+    faseSom = True
+
+# som
+
+if(faseAprox == False and proximaFase == True and faseSom == True):
+    print('\nA próxima fase será iniciada.')
+    toqueBarra = 0
+
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(faseAprox == False and proximaFase == True and faseSom == True):
+        print('\nA próxima fase será iniciada.')
+        toqueBarra = 0
+
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+
+    alt = input('Deseja emitir o som Phee ou o som Trill (1 ou 2)? ')
+    if(alt[0] == '1'):
+        som1 = True  
+    if(alt[0] == '2'):
+        som2 = True
+
+    alt = input('O animal tocou na barra esquerda ou direita (e/d)? ')
+    if(alt[0].lower() == 'e'):
+        toqueBarraEsq = True
+    if(alt[0].lower() == 'd'):
+        toqueBarraDir = True 
+
+    if(som1 and toqueBarraEsq):
+        print('Será liberada a recompensa de 0,5 mL.')       
+    if(som2 and toqueBarraDir):
+        print('Será liberada a recompensa de 0,5 mL.')
+    else:
+        print('Não será liberada a recompensa.')
+    
+# tempo
+
+alt = input('o experimento foi conduzido em até 30 minutos (s/n)?')
+if(alt[0] == 's' and toqueBarra == 50):
+    proximaFase = True
+    print('O experimento irá para a próxima fase.')
+else:
+    proximaFase = False
+    print('O experimento será encerrado.')
