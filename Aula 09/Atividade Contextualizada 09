@@ -1,5 +1,3 @@
-from os import system
-system('clear')
 import csv
 import math
 import numpy as np
