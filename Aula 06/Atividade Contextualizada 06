@@ -1,0 +1,294 @@
+posicionamento = list()
+respostaUsuario = ''  
+parafusos = 0  
+posicaoParafusos = list()  
+posicoesAgulha = ('AP', 'LL1', 'LL2', 'DV') 
+coordAgulha = {'AP': 6.00, 'LL1': -3.63, 'LL2': 3.03, 'DV': 4.00} 
+coordHipocampo = [-0.20, -0.40, 0.30, -0.20] 
+farmaco = dict()
+animalTag = dict()
+limpezaCampoDeTrabalho= ''
+
+print('Será dado início à cirurgia esterotáxica.')
+respostaUsuario = input('Quer dar início ao procedimento? [s/n]')
+if(respostaUsuario.lower() == 's'):
+    print('O procedimento será iniciado.')
+elif(respostaUsuario.lower() == 'n'):
+    print('O procedimento está em pausa.')
+else:
+    print('Resposta inválida.')
+
+
+# procedimento I
+
+while(True):
+    farmaco['nome'] = input('Informe o fármaco anestésico a ser utilizado.')
+    farmaco['quantidade'] = int(input('Quantidade (mL): '))
+    animalTag['peso'] = float(input('Digite o peso do animal (g): '))
+    respostaUsuario = input('A quantidade de ' + str(farmaco['quantidade'])+'ml de ' + str(
+        farmaco['nome'])+' é adequada para um animal de '+str(animalTag['peso'])+'gramas? [s/n]')
+    if(respostaUsuario.lower() == 's'):
+        print('Anestesia realizada.')
+        break
+    elif(respostaUsuario.lower() == 'n'):
+        print('O procedimento de anestesia não foi realizado adequadamente. Insira novamente os parâmetros.\n')
+        continue
+    else:
+        print('Resposta inválida.')
+        continue
+        
+        
+# procedimento II
+
+resposta = ''
+while(True):
+    resposta = input('\nO procedimento de anestesia foi concluído? [s/n] ')
+    if(resposta.lower() == 's'):
+        break
+    print('Aguarde o efeito do anestésico.')
+
+print('\nPosicione o animal no esterotáxico.')
+while(True):
+    while(True):
+        resposta = input(
+            '\nAs barras que suportam o peso do animal estão posicionadas no ouvido externo? [s/n]')
+        if(resposta.lower() == 's'):
+            posicionamento.append(True)
+            break
+        print('Por favor, posicione as barras no ouvido externo do animal.')
+
+    resposta = input('\nO animal piscou durante o posicionamento das barras? [s/n]')
+    if(resposta.lower() == 's'):
+        posicionamento.append(True)
+    else:
+        posicionamento.append(False)
+
+    print('Verifique a angulação da cabeça do animal.')
+    resposta = input(
+        '\nA cabeça do animal está na mesma angulação que o bregma e o lambda? [s/n]')
+    if(resposta.lower() == 's'):
+        posicionamento.append(True)
+    else:
+        posicionamento.append(False)
+
+    resposta = input('\nO animal está posicionado corretamente? [s/n]')
+    if(resposta.lower() == 's'):
+        posicionamento.append(True)
+    else:
+        posicionamento.append(False)
+
+    if(False not in posicionamento):
+        break
+    else:
+        print('Reposicione o animal.')
+
+# procedimento III
+
+print('Será realizada a limpeza do campo de trabalho.')
+
+while(True):
+    respostaUsuario = input(
+        '\nA pelagem do animal que cobre a parte superior da calota craniana foi retirada? [s/n]')
+    if(respostaUsuario.lower() == 's'):
+        limpezaCampoDeTrabalho.append(True)
+    else:
+        limpezaCampoDeTrabalho.append(False)
+
+    respostaUsuario = input(
+        '\nOs tecidos moles foram retirados até o alcance do tecido ósseo? [s/n]')
+    if(respostaUsuario.lower() == 's'):
+        limpezaCampoDeTrabalho.append(True)
+    else:
+        limpezaCampoDeTrabalho.append(False)
+
+    respostaUsuario = input(
+        '\nA calota craniana foi limpa com 10 volumes de H2O2 para retirar resquícios de pele? [s/n]')
+    if(respostaUsuario.lower() == 's'):
+        limpezaCampoDeTrabalho = True
+    elif(respostaUsuario.lower() == 'n'):
+        limpezaCampoDeTrabalho = False
+    else:
+        print('Resposta inválida.')
+        limpezaCampoDeTrabalho = False
+
+    if(limpezaCampoDeTrabalho == True):
+        print('Limpeza concluída corretamente.')
+        break
+    elif(limpezaCampoDeTrabalho == False):
+        print('Limpeza não concluída. É necessário repetir os passos para dar prosseguimento à cirurgia')
+        continue
+
+# procedimento IV
+
+print('Aplique poliacrilato em todo o perímetro externo para evitar sangramentos.')
+resposta = input('A aplicação de poliacrilato foi concluída? [s/n]')        
+if(resposta.lower() == 's'):
+    print('Será dado prosseguimento à cirurgia.')
+else:
+    print('Realize a aplicação correta do poliacrilato.')
+
+# procedimento V
+
+while(True):
+    parafusos = 0
+    while(not parafusos):
+        parafusos = int(
+            input('\nDigite a quantidade de parafusos a serem fixados: '))
+
+    print('Os parafusos serão fixados.')
+    for i in range(parafusos):
+        respostaUsuario = input('Informe onde o parafuso '+str(i+1) +
+                         ' de '+str(parafusos)+' será posicionado: ')
+        posicaoParafusos.append(respostaUsuario)
+
+    print('\nOs parafusos serão fixados conforme descrição abaixo:')
+    for i in range(parafusos):
+        print('Parafuso '+str(i+1)+': '+posicaoParafusos[i])
+    respostaUsuario = input("Digite 'ok' para confirmar as posições: ")
+    if(respostaUsuario.lower() == 'ok'):
+        print('\nParafusos fixados. Foram dadas até três voltas em cada parafuso.')
+        break
+    else:
+        print('\nA fixação dos parafusos será reiniciada.')
+        continue
+
+# procedimento VI
+
+print('\nPosicionamento inicial da agulha:')
+for i in range(len(posicoesAgulha)):
+    print(posicoesAgulha[i], ': ', coordAgulha[posicoesAgulha[i]])
+
+print('\nA agulha será ajustada.')
+for i in range(len(posicoesAgulha)):
+    coordAgulha[posicoesAgulha[i]] += coordHipocampo[i]
+
+print('\nPosicionamento da agulha após ajustes:')
+for i in range(len(posicoesAgulha)):
+    print(posicoesAgulha[i], ': ', coordAgulha[posicoesAgulha[i]])
+
+print('As agulhas foram posicionadas corretamente.')
+
+# procedimento VII
+
+print('\nSerá realizado um furo com a broca até alcançar as meninges')
+while(True):
+    print('\nApóie sua mão sobre o assoalho ou o estereotáxico e perfure o crânio a cerca de 45º de angulação.')
+    respostaUsuario = input('As meninges do animal foram alcançadas? [s/n]')
+    if(respostaUsuario.lower() == 's'):
+        print('Perfuração finalizada.')
+        break
+    elif(respostaUsuario.lower() == 'n'):
+        print('Será feita uma nova tentativa.')
+        continue
+    else:
+        print('Resposta inválida. A broca será parada.')
+        continue
+
+# procedimento VIII
+
+print('\nCánula-guia introduzida até o DorsoVentral, posição:',
+      coordAgulha[posicoesAgulha[3]])
+
+# procedimento IX
+
+print('\nDrene com pequenos rolos de papel absorvente todo o sangue ou líquido cefalorraquidiano que esteja saindo do orifício.')
+respostaUsuario = ''
+while(True):
+    respostaUsuario = input('\nDrenagem finalizada? [s/n]')
+    if(respostaUsuario.lower() == 's'):
+        break
+    elif(respostaUsuario.lower() == 'n'):
+        print('Execute a drenagem do líquido cefalorraquidiano.')
+        continue
+    else:
+        print('Resposta inválida.')
+        continue
+
+# procedimento X
+
+print('\nFaça uma mistrura de acrílico com solvente. ')
+
+while(True):
+    respostaUsuario = input('\nA mistura está espessa, porém maleável? [s/n]')
+    if(respostaUsuario.lower() == 's'):
+        print('\nCom a mistura faça um capacete abrangendo o crânio, a cânula-guia e o parafuso.')
+        break
+    elif(respostaUsuario.lower() == 'n'):
+        print('Ajuste a mistura.')
+        continue
+    else:
+        print('Resposta inválida.')
+        continue
+
+print('\nEspere a mistura secar.')
+while(True):
+    resposta = input('\nA mistura está suficientemente rígida? [s/n]')
+    if(resposta.lower() == 's'):
+        break
+    else:
+        print('\nAguarde. O tempo de secagem varia de acordo com a temperatura e umidade da sala.')
+
+# procedimento XI
+
+print('\nSerá feita a fixação da outra cânula-guia. ')
+while(True):
+    print('\nLevante o braço do estereotáxico com cuidado para que a cânuna-guia previamente fixada não se movimente.')
+    respostaUsuario = input('\nA cánula-guia foi introduzida até o DorsoVentral, posição:' +
+                     str(coordAgulha[posicoesAgulha[3]])+'? [s/n]')
+    if(respostaUsuario.lower() == 's'):
+        break
+    elif(respostaUsuario.lower() == 'n'):
+        print('\nSerá feita uma nova tentativa.')
+        continue
+    else:
+        print('\nResposta inválida.')
+        continue
+
+# procedimento XII
+
+print('\nDrene com pequenos rolos de papel absorvente todo o sangue ou líquido cefalorraquidiano que esteja saindo do orifício.')
+respostaUsuario = ''
+while(True):
+    respostaUsuario = input('\nDrenagem finalizada? [s/n]')
+    if(respostaUsuario.lower() == 's'):
+        break
+    elif(respostaUsuario.lower() == 'n'):
+        print('Execute a drenagem do líquido cefalorraquidiano.')
+        continue
+    else:
+        print('Resposta inválida.')
+        continue
+
+print('\nFaça uma mistrura de acrílico com solvente. ')
+
+while(True):
+    respostaUsuario = input('\nA mistura está espessa, porém maleável? [s/n]')
+    if(respostaUsuario.lower() == 's'):
+        print('\nCom a mistura faça um capacete abrangendo o crânio, a cânula-guia e o parafuso.')
+        break
+    elif(respostaUsuario.lower() == 'n'):
+        print('Ajuste a mistura.')
+        continue
+    else:
+        print('Resposta inválida.')
+        continue
+
+print('\nEspere a mistura secar.')
+while(True):
+    resposta = input('\nA mistura está suficientemente rígida? [s/n]')
+    if(resposta.lower() == 's'):
+        break
+    else:
+        print('\nAguarde. O tempo de secagem varia de acordo com a temperatura e umidade da sala.')
+
+
+# procedimento XIII
+
+print('\nLevante bem devagar, com cuidado para que a cânulas-guia fixadas não se movimentem.')
+print('\nAcomode o animal em uma caixa aquecida por uma lâmpada e sem outros animais acordados.')
+while(True):
+    resposta = input('Procedimento executado? [s/n]')
+    if(resposta.lower() == 's'):
+        break
+print('Assim que o animal despertar, coloque-o de volta a sua caixa-moradia.')
+print('\n Procedimento finalizado.')
