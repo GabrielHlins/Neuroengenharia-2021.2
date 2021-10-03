@@ -1,0 +1,18 @@
+print('Programa elaborado para o cálculo do índice de massa corporal (IMC).')
+
+peso = float(input('Insira o seu peso.'))
+altura = float(input('\nInsira a sua altura.'))
+
+imc = peso/(altura ** 2)
+
+print('\nIMC: ', imc)
+if(imc < 17):
+    print('Muito abaixo do peso')
+elif (17 <= imc < 18.5):
+    print('Abaixo do peso normal')
+elif (18.5 <= imc < 25):
+    print('Dentro do peso normal')
+elif (25 <= imc < 30):
+    print('Acima do peso normal')
+else:
+    print('Muito acima do peso')
