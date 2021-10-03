@@ -1,3 +1,5 @@
+import csv
+
 sensor1 = list()
 sensor2 = list()
 variaveis = ('ax','ay','az','gx','gy','gz')
